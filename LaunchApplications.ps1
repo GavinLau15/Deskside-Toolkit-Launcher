@@ -47,7 +47,7 @@ $Browsers.Values | ForEach-Object{
     Start-Process -FilePath $_.Path -ArgumentList $Arguments
 }
 
-# 
+# List of applications to be launched with a regular user account
 $Applications = @{
     Notepad = 'notepad.exe'
     Greenshot = 'greenshot.exe'
@@ -67,25 +67,10 @@ $Command = ($AdminApplications.Values | ForEach-Object {
     "Start-Process -FilePath '$_'"
 }) -join '; '
 
-##Start-Process 'powershell.exe' -Verb RunAs -ArgumentList $Command
+Start-Process 'powershell.exe' -Verb RunAs -ArgumentList $Command
 
 # Open each application 
 $Applications.Values | ForEach-Object {
     Write-Host "Opening: '$_'" -ForegroundColor Green
     #Start-Process -FilePath $_
-}
-
-
-
-# whgen to use simple paths vs just the name, it says simple apps in windows PATh dont need full directories
-# perhaps create script to remind u to check for ur tickets for the day?
-$URLS = @{
-    ForceNewWindow = "--new-window"
-    CitrixDirectory = "https://citrixdirectorca.cnrl.com/Director/LogOn.aspx?ReturnUrl=%2fDirector%2fdashboard%3flocale%3den_US%26siteid%3d1371d385-ca8c-4316-8fa8-4793c3e323f2&locale=en_US&siteid=1371d385-ca8c-4316-8fa8-4793c3e323f2&cc=true"
-    PowerBICallRouting = "https://powerbi.cnrl.com/reports/powerbi/Corporate/IS/IS%20Process%20Team/Incident%20and%20Work%20Order/Call%20Routing%20and%20Contact%20Lists"
-    PowerBISurveys = "https://powerbi.cnrl.com/reports/powerbi/Corporate/IS/IS%20Process%20Team/Incident%20and%20Work%20Order/Survey%20Response"
-    M65Copilot = "https://m365.cloud.microsoft/chat/?fromcode=cmmyr718qsb&auth=2"
-    OneDrive = "https://cnrl-my.sharepoint.com/"
-    HPWebJetadmin = "https://wincgyapp0441.cnrl.com:8443/"
-    KnowledgeBase = "https://kb.cnrl.com/kb/home.php"
 }
