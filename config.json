@@ -1,0 +1,11 @@
+{
+    "Links": {
+        "KnowledgeBase": "https://kb.cnrl.com/kb/home.php",
+        "CitrixDirectory": "https://citrixdirectorca.cnrl.com/Director/LogOn.aspx?ReturnUrl=%2fDirector%2fdashboard%3flocale%3den_US%26siteid%3d1371d385-ca8c-4316-8fa8-4793c3e323f2&locale=en_US&siteid=1371d385-ca8c-4316-8fa8-4793c3e323f2&cc=true",
+        "PowerBICallRouting": "https://powerbi.cnrl.com/reports/powerbi/Corporate/IS/IS%20Process%20Team/Incident%20and%20Work%20Order/Call%20Routing%20and%20Contact%20Lists",
+        "PowerBISurveys": "https://powerbi.cnrl.com/reports/powerbi/Corporate/IS/IS%20Process%20Team/Incident%20and%20Work%20Order/Survey%20Response",
+        "M365Copilot": "https://m365.cloud.microsoft/chat/?fromcode=cmmyr718qsb&auth=2",
+        "OneDrive": "https://cnrl-my.sharepoint.com/",
+        "HPWebJetadmin": "https://wincgyapp0441.cnrl.com:8443/"
+    }
+}
