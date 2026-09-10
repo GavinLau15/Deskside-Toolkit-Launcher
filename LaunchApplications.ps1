@@ -51,7 +51,8 @@ $Browsers.Values | ForEach-Object{
 $Applications = @{
     Notepad = 'notepad.exe'
     Greenshot = 'greenshot.exe'
-    Outlook = ''
+    PrintManagement = 'printmanagement.msc'
+    Outlook = 'outlook.exe'
     Teams = ''
 }
 
@@ -61,15 +62,17 @@ $AdminApplications = @{
     ActiveDirectory = 'dsa.msc'
 }
 
-# Use powershell as admin in order to launch specified applications in $AdminApplications with admin credentials.
-# $Command is a command string that iterates through $AdminApplication.Values and builds a single semicolon-separated string containing a "Start-Process" command for each application path
+# Command string to build a semicolon-separated list of Start-Process commands for each 
+# application path stored in $AdminApplications
 $Command = ($AdminApplications.Values | ForEach-Object {
     "Start-Process -FilePath '$_'"
 }) -join '; '
 
+# Launch an elevated PowerShell process and execute the commands in $Command, causing all specified applications
+# to start with admin privileges
 Start-Process 'powershell.exe' -Verb RunAs -ArgumentList $Command
 
-# Open each application 
+# Open each application with regular user account
 $Applications.Values | ForEach-Object {
     Write-Host "Opening: '$_'" -ForegroundColor Green
     #Start-Process -FilePath $_
