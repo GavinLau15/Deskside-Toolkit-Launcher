@@ -23,3 +23,4 @@ A PowerShell script that automates the startup routine for Deskside Support Anal
  - Install missing applications automatically.
  - Provide a configuration menu for selecting applications, browser preferences, and web resources.
  - Store user preferences in a configurable settings file.
+ - Let users enter their own weblinks
