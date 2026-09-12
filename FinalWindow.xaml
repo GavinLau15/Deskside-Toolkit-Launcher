@@ -1,0 +1,17 @@
+<Window xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title = "Profile Configuration"
+        Height = "600"
+        Width = "800"
+        WindowStartupLocation = "CenterScreen">
+
+        <StackPanel>
+            <TextBlock Text="Profile Configuration Complete"/>
+            <Button Name="RegularButton" Content = "regular button"/>
+            <Button Name="NextButton" Content="Next"/>
+            <Button Name="CancelButton" Content="Cancel"/>
+            <Button Name="BackButton" Content="Back"/>
+            <CheckBox Name="TestCheckBox" Content="Test"/>
+        </StackPanel>
+        
+</Window>
