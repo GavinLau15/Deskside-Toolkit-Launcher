@@ -22,7 +22,7 @@ function Set-ControlStyle {
     if ($ControlName -eq "NextButton") {
         $Control.add_click({
             $MainWindow.close()
-            $Window = Show-XamlWindow ".\OptionsWindow1.xaml"
+            $Window = Show-XamlWindow ".\RegularApps.xaml"
             $Window.ShowDialog()
         })
     }
