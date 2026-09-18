@@ -57,9 +57,9 @@ function Save-CurrentViewData {
 
     switch ($script:CurrentIndex) {
 
-    # ============================================================
-    # Admin Apps
-    # ============================================================
+        # ============================================================
+        # Admin Apps
+        # ============================================================
 
         0 {
             $script:ProfileConfig.AdminApps = @()
@@ -161,7 +161,7 @@ $script:Views = @(
     (Join-Path $ScriptRoot "Views\SummaryView.xaml")
 )
 
-# Current Index is used to track where the user i
+# Current Index is used to track where the user is at
 #0 = Admin Apps
 #1 = Regular Apps
 #2 = URLs

@@ -9,7 +9,14 @@ User selections made on this page are stored in $ProfileConfig.WebBrowsers.
         
         <StackPanel Margin="40">
 
-                <TextBlock Text="Select Web Browser" FontSize="24"/>
+                <TextBlock 
+                        Text="Select Web Browser"
+                        FontSize="24"
+                        FontWeight="Bold"
+                        Margin="0,0,0,20"/>
+
+                <CheckBox x:Name="Chrome" Content="Chrome.exe" Margin="0,0,0,20"/>
+                <CheckBox x:Name="Edge" Content="MSEdge.exe" Margin="0,0,0,20"/>
 
         </StackPanel>
 

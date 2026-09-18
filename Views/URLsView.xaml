@@ -19,6 +19,25 @@ User selections made on this page are stored in $ProfileConfig.URLs.
                         x:Name="cbServiceNow"
                         Content="ServiceNow"
                         Margin="0,0,0,20"/>
-
+                <CheckBox
+                        x:Name="cbRemedy"
+                        Content="BMC Remedy"
+                        Margin="0,0,0,20"/>
+                <CheckBox
+                        x:Name="cbKnowledge"
+                        Content=""
+                        Margin="0,0,0,20"/>
+                <CheckBox
+                        x:Name="cbCitrixDirector"
+                        Content="Citrix Director"
+                        Margin="0,0,0,20"/>
+                <CheckBox
+                        x:Name="cbOneDrive"
+                        Content="OneDrive"
+                        Margin="0,0,0,20"/>
+                <CheckBox
+                        x:Name="cbM365Copilot"
+                        Content="Copilot"
+                        Margin="0,0,0,20"/>
         </StackPanel>
 </UserControl>

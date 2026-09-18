@@ -4,14 +4,20 @@ It is loaded into MainWindow.xaml's ContentControl and displayed when CurrentInd
 User selections made on this page are stored in $ProfileConfig.Applications.
 -->
 <UserControl
-        xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
         <StackPanel Margin="20">
 
-                <TextBlock Text="Select Applications" FontSize="24"/>
+                <TextBlock 
+                        Text="Select Applications"
+                        FontSize="24"
+                        FontWeight="Bold"
+                        Margin="0,0,0,20"/>
 
-                <CheckBox Content="Outlook"/>
-                <CheckBox Content="Teams"/>
+                <CheckBox x:Name="cbOutlook" Content="Outlook" Margin="0,0,0,20"/>
+                <CheckBox x:Name="cbPrintManagement" Content="Teams" Margin="0,0,0,20"/>
+                <CheckBox x:Name="cbNotepad" Content="Notepad" Margin="0,0,0,20"/>
 
         </StackPanel>
 
