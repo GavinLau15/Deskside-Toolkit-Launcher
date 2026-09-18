@@ -1,5 +1,8 @@
-<!-- Each of the xaml files in the views folders represents a page. They are not windows, they are pieces of UI -->
-
+<!-- 
+This UserControl represents the Admin Applications step of the Profile Configuration.
+It is loaded into MainWindow.xaml's ContentControl and displayed when CurrentIndex = 0.
+User selections made on this page are stored in $ProfileConfig.AdminApps.
+-->
 <UserControl
         xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation">
         

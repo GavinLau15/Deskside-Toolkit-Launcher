@@ -1,14 +1,24 @@
+<!-- 
+This UserControl represents the Web URLs step of the Profile Configuration.
+It is loaded into MainWindow.xaml's ContentControl and displayed when CurrentIndex = 2.
+User selections made on this page are stored in $ProfileConfig.URLs.
+-->
 <UserControl
-        xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
         
         <StackPanel Margin="40">
 
-                <TextBlock Text="Select Web URLs" FontSize="24"/>
-                
-                <Button Name="NextButton" Content="Next"/>
-                <Button Name="CancelButton" Content="Cancel"/>
-                <Button Name="BackButton" Content="Back"/>
+                <TextBlock 
+                        Text="Select Web URLs" 
+                        FontSize="24"
+                        FontWeight="Bold"
+                        Margin="0,0,0,20"/>
+
+                <CheckBox
+                        x:Name="cbServiceNow"
+                        Content="ServiceNow"
+                        Margin="0,0,0,20"/>
 
         </StackPanel>
-
 </UserControl>

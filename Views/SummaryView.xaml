@@ -4,10 +4,6 @@
         <StackPanel Margin="40">
 
                 <TextBlock Text="Summary" FontSize="24"/>
-                
-                <Button Name="NextButton" Content="Next"/>
-                <Button Name="CancelButton" Content="Cancel"/>
-                <Button Name="BackButton" Content="Back"/>
 
         </StackPanel>
 
