@@ -1,0 +1,14 @@
+<!-- Each of the xaml files in the views folders represents a page. They are not windows, they are pieces of UI -->
+
+<UserControl
+        xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        
+        <StackPanel Margin="40">
+
+                <TextBlock Text="Select Admin Applications" FontSize="24"/>
+
+                <CheckBox Name="cbADUC" Content="Active Directory"/>
+
+        </StackPanel>
+
+</UserControl>

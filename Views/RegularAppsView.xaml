@@ -1,0 +1,13 @@
+<UserControl
+        xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+        <StackPanel Margin="20">
+
+                <TextBlock Text="Select Applications" FontSize="24"/>
+
+                <CheckBox Content="Outlook"/>
+                <CheckBox Content="Teams"/>
+
+        </StackPanel>
+
+</UserControl>
